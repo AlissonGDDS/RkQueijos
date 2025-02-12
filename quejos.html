@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+        header {
+            background-color: #3c2717; 
+            color: #D4AF37;
+            padding: 1rem 0;
+            font-family: 'Georgia', serif;
+        }
+        h1 {
+            margin: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 225px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        .product img {
+            border-radius: 10px;
+            width: 100%;
+            height: 150px; /* Define altura fixa para todas as imagens */
+            object-fit: cover; /* Ajusta a imagem para caber dentro do tamanho */
+        }
+        .product h2 {
+            font-size: 22px; /* Aumenta o tamanho da fonte */
+            font-weight: bold; /* Deixa o texto mais grosso */
+            color: #333; /* Tom mais escuro */
+            margin: 10px 0 5px; /* Ajusta os espaços */
+        }
+        .product p {
+            font-size: 20px; /* Aumenta o tamanho da fonte */
+            font-weight: bold; /* Deixa o texto mais grosso */
+            color: #444; /* Tom mais escuro */
+            margin-bottom: 10px; /* Ajusta os espaços */
+        }
+        .cta-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #D4AF37;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(44, 7, 7, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #b99a30;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .cta-button {
+                width: 90%;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/Imagem do WhatsApp de 2025-01-25 à(s) 14.50.46_8ba4048e.jpg" alt="">
+    </header>
+    <div class="gallery">
+        <div class="product">
+            <img src="imagens/Captura de tela 2025-01-24 112404.png" alt="Queijo Coalho que Derrete">
+            <h2>Queijo Coalho que Derrete</h2>
+            <p>R$ 45,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/Captura de tela 2025-01-24 112411.png" alt="Queijo Coalho que Não Derrete">
+            <h2>Queijo Coalho que Não Derrete</h2>
+            <p>R$ 46,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/Captura de tela 2025-01-24 112349.png" alt="Queijo Coalho com Charque/calabresa">
+            <h2>Queijo Coalho com Charque/Calabresa</h2>
+            <p>R$ 50,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/Captura de tela 2025-01-24 112051.png" alt="Queijo Coalho com Azeitona">
+            <h2>Queijo Coalho com Azeitona</h2>
+            <p>R$ 50,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/Captura de tela 2025-01-24 112310.png" alt="Queijo Coalho com Orégano">
+            <h2>Queijo Coalho com Orégano</h2>
+            <p>R$ 50,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/Captura de tela 2025-01-24 112323.png" alt="Queijo Manteiga">
+            <h2>Queijo Manteiga</h2>
+            <p>R$ 50,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/Captura de tela 2025-01-24 112851.png" alt="Queijo Raspa de Tacho">
+            <h2>Queijo Raspa de Tacho</h2>
+            <p>R$ 50,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/Captura de tela 2025-01-24 112257.png" alt="Manteiga de Pote do Sertão 250g">
+            <h2>Manteiga de Pote do Sertão 250g</h2>
+            <p>R$ 12,00</p>
+        </div>
+    </div>
+    <a class="cta-button" href="http://wa.me/8293223236" target="_blank">Peça já!!!!</a>
+</body>
+</html>

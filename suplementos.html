@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Suplementos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        header {
+            background-color: #4b0082;
+            color: #ffffff;
+            padding: 1rem 0;
+            font-family: 'Georgia', serif;
+        }
+        h1 {
+            margin: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #6a0dad;
+            border-radius: 15px;
+            background-color: #2a2a2a;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 225px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        .product img {
+            border-radius: 10px;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .product h2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 10px 0 5px;
+        }
+        .product p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #6a0dad;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(106, 13, 173, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #5a009d;
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .cta-button {
+                width: 90%;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suplementos Premium</h1>
+    </header>
+    <div class="gallery">
+        <div class="product">
+            <img src="imagens/whey.png" alt="Whey Protein">
+            <h2>Whey Protein</h2>
+            <p>R$ 120,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/creatina.png" alt="Creatina">
+            <h2>Creatina</h2>
+            <p>R$ 90,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/bcaa.png" alt="BCAA">
+            <h2>BCAA</h2>
+            <p>R$ 75,00</p>
+        </div>
+        <div class="product">
+            <img src="imagens/pretreino.png" alt="Pré-Treino">
+            <h2>Pré-Treino</h2>
+            <p>R$ 85,00</p>
+        </div>
+    </div>
+    <a class="cta-button" href="http://wa.me/8293223236" target="_blank">Peça já!</a>
+</body>
+</html>
